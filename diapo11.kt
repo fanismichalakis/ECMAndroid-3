@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG,"i am in onCreate")
 
         button.setOnClickListener {
+            //pour définir la variable chooser_title, la survoler avec le curseur
+            //cela fera apparaître le bouton permettant de déclarer la string dans les ressources
             val title: String = resources.getString(R.string.chooser_title)
 
             val sendIntent: Intent = Intent().apply {
